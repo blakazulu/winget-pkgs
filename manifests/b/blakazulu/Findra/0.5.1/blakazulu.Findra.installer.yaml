@@ -1,0 +1,23 @@
+# Created using wingetcreate 1.12.13.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.6.0.schema.json
+
+PackageIdentifier: blakazulu.Findra
+PackageVersion: 0.5.1
+InstallerType: inno
+Scope: machine
+InstallModes:
+- interactive
+- silent
+- silentWithProgress
+InstallerSwitches:
+  Custom: /INSTALLSOURCE=winget
+UpgradeBehavior: install
+Installers:
+- Architecture: x64
+  InstallerUrl: https://github.com/blakazulu/findra/releases/download/v0.5.1/findra-setup-x64.exe
+  InstallerSha256: B4AE568C139F6FD3563EA1CC4AA7DC5B43AAAA695308090692A6679ACAF1B0B4
+- Architecture: arm64
+  InstallerUrl: https://github.com/blakazulu/findra/releases/download/v0.5.1/findra-setup-arm64.exe
+  InstallerSha256: D8C8D89F22335FF99CD053AA882E7E4273EC03838D1B568D1391F6FFF06B1EA3
+ManifestType: installer
+ManifestVersion: 1.6.0
